@@ -1,11 +1,11 @@
-About pydiverse-transform
-=========================
+About pydiverse-transform-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydiverse-transform-feedstock/blob/main/LICENSE.txt)
 
 Home: None
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydiverse-transform-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pipe based dataframe manipulation library that can also transform data on SQL databases
 
