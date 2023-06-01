@@ -143,5 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@NMAC427](https://github.com/NMAC427/)
 * [@windiana42](https://github.com/windiana42/)
 
