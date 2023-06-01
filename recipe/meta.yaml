@@ -1,13 +1,13 @@
 {% set name = "pydiverse-transform" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa209cc363a907d4ff73fd5afaa86900070c7d3b4791209b800d76d9f53e57f6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_transform-{{ version }}.tar.gz
+  sha256: d781a17f1adb7545202edfe29dc23823fe9c154e24cae6d9b894681eb80895fc
 
 build:
   noarch: python
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - windiana42
+    - NMAC427
