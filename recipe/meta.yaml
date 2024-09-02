@@ -1,5 +1,5 @@
 {% set name = "pydiverse-transform" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_transform-{{ version }}.tar.gz
-  sha256: 199a7b106904a0434b14d2e72c5832eece7b522b07a92df254e0461127817cd9
+  sha256: 914cb97a176bec6f13fb3f3d1d3aed4094c97aa60431e5f9fa050e7c0ad2483f
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - poetry
+    - hatchling
     - pip
     - python >=3.9,<4.0
   run:
     - python >=3.9,<4.0
     - numpy >=1.23.1
     - pandas >=1.4.3
-    - sqlalchemy >=1.4.39
+    - sqlalchemy >=1.4.27
 
 test:
   imports:
