@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - poetry
+    - hatchling
     - pip
     - python >=3.9,<4.0
   run:
     - python >=3.9,<4.0
     - numpy >=1.23.1
     - pandas >=1.4.3
-    - sqlalchemy >=1.4.39
+    - sqlalchemy >=1.4.27
 
 test:
   imports:
