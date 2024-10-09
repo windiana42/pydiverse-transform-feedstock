@@ -144,5 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@NMAC427](https://github.com/NMAC427/)
+* [@finn-rudolph](https://github.com/finn-rudolph/)
+* [@pavelzw](https://github.com/pavelzw/)
 * [@windiana42](https://github.com/windiana42/)
 
