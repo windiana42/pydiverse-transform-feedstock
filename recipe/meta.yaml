@@ -18,9 +18,9 @@ requirements:
   host:
     - hatchling
     - pip
-    - python >=3.9
+    - python >=3.10
   run:
-    - python >=3.9
+    - python >=3.10
     - pandas >=2.0.0
     - polars >=1.6.0
     - sqlalchemy >=2.0.0
