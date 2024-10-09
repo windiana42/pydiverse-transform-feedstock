@@ -1,5 +1,5 @@
 {% set name = "pydiverse-transform" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_transform-{{ version }}.tar.gz
-  sha256: 914cb97a176bec6f13fb3f3d1d3aed4094c97aa60431e5f9fa050e7c0ad2483f
+  sha256: 017151c342113fde3716a358be6e9a59bfaf9671c9983aba347420daf85fa434
 
 build:
   noarch: python
