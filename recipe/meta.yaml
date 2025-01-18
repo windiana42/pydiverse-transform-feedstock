@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pydiverse-transform" %}
 {% set version = "0.2.2" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_transform-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydiverse_transform-{{ version }}.tar.gz
   sha256: 017151c342113fde3716a358be6e9a59bfaf9671c9983aba347420daf85fa434
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatchling
     - pip
-    - python >=3.10
+    - python {{ python_min }}
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - pandas >=2.0.0
     - polars >=1.6.0
     - sqlalchemy >=2.0.0
@@ -38,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pydiverse/pydiverse.transform
