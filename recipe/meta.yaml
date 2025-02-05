@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "pydiverse-transform" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydiverse_transform-{{ version }}.tar.gz
-  sha256: 017151c342113fde3716a358be6e9a59bfaf9671c9983aba347420daf85fa434
+  sha256: b59fe146bbf198baa07974267b3dd60be43f5334ed7fc8bce880dd570f124874
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
