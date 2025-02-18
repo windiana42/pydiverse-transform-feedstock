@@ -11,6 +11,8 @@ Summary: Pipe based dataframe manipulation library that can also transform data 
 
 Development: https://github.com/pydiverse/pydiverse.transform
 
+Documentation: https://pydiversetransform.readthedocs.io/
+
 Current build status
 ====================
 

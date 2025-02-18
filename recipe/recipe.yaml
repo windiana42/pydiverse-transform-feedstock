@@ -1,0 +1,57 @@
+context:
+  name: pydiverse-transform
+  version: '0.2.3'
+  python_min: '3.10'
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_transform-${{ version }}.tar.gz
+  sha256: b59fe146bbf198baa07974267b3dd60be43f5334ed7fc8bce880dd570f124874
+
+build:
+  noarch: python
+  script: python -m pip install . -vv
+  number: 1
+
+requirements:
+  host:
+    - hatchling
+    - pip
+    - python ${{ python_min }}.*
+  run:
+    - python >=${{ python_min }}
+    - pandas >=2.0.0
+    - polars >=1.6.0
+    - sqlalchemy >=2.0.0
+    - pyarrow >=11.0.0
+  run_constraints:
+    - python-duckdb >=0.8.1
+    - duckdb-engine >=0.9.1
+    - psycopg2 >=2.9.3
+    - pyodbc >=4.0.35
+
+tests:
+  - python:
+      imports:
+        - pydiverse.transform
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  homepage: https://github.com/pydiverse/pydiverse.transform
+  documentation: https://pydiversetransform.readthedocs.io/
+  summary: Pipe based dataframe manipulation library that can also transform data on SQL databases
+  license: BSD-3-Clause
+  license_file:
+    - LICENSE
+  repository: https://github.com/pydiverse/pydiverse.transform
+
+extra:
+  recipe-maintainers:
+    - finn-rudolph
+    - pavelzw
+    - windiana42
+    - NMAC427
