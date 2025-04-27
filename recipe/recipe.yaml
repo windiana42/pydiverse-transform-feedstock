@@ -1,6 +1,6 @@
 context:
   name: pydiverse-transform
-  version: "0.3.0"
+  version: "0.3.1"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_transform-${{ version }}.tar.gz
-  sha256: 8e466b7be533eff03247fbfbf20014964e4fe2b4cad6532f86c7ef96bd03321e
+  sha256: a841727147e9819cb8875f5de3d2c2db9e52d7f5d5ed8ae18fc8eebfcc73f2e9
 
 build:
   noarch: python
