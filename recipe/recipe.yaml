@@ -1,7 +1,7 @@
 context:
   name: pydiverse-transform
   version: "0.3.1"
-  python_min: '3.10'
+  python_min: '==3.10'
 
 package:
   name: ${{ name|lower }}
