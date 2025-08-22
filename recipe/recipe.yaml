@@ -1,6 +1,6 @@
 context:
   name: pydiverse-transform
-  version: "0.5.5"
+  version: "0.5.6"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_transform-${{ version }}.tar.gz
-  sha256: eee260293cae893cea286d261230f78f3eeb9dff122b35de1153da4e514fe409
+  sha256: 85aa722c1e7b8016f5742372de9bda5b50767130424fd311e1a27524274b0932
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - pandas >=2.3.0,<3
     - pyarrow >=19.0.0,<21
     - polars >=1.30.0,<2
-    - pydiverse-common >=0.3.4,<0.4
+    - pydiverse-common >=0.3.12,<0.4
     - sqlalchemy >=2.0.41,<3
   run_constraints:
     - python-duckdb >=1.3.0,<2
