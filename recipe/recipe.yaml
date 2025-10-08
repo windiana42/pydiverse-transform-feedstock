@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pandas >=2.3.0,<3
-    - pyarrow >=19.0.0,<21
+    - pyarrow >=19.0.0,<22
     - polars >=1.30.0,<2
     - pydiverse-common >=0.4.0,<0.5
     - sqlalchemy >=2.0.41,<3
